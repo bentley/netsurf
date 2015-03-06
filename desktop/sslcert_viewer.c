@@ -200,7 +200,7 @@ static nserror sslcert_viewer_create_node(
 
 
 /**
- * Initialise the treeview entry feilds
+ * Initialise the treeview entry fields
  *
  * \param ssl_d		SSL certificate session data
  * \return true on success, false on memory exhaustion

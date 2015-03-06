@@ -23,7 +23,7 @@
  * destination that divides the website into pages - as a printer.
  * 	The basic usage is calling print_basic_run which sets everything up,
  * prints page after page until the whole content is printed and cleans
- * everyting up.
+ * everything up.
  * 	If there are any other, printer specific routines to be performed in the
  * meantime - there can be set up any other printing funcion, which can use
  * print_set_up, print_draw_next_page and print_cleanup directly.

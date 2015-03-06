@@ -146,7 +146,7 @@ lwc_string *nsurl_get_component(const nsurl *url, nsurl_component part);
 
 
 /**
- * Enquire about the existence of componenets in a given URL
+ * Enquire about the existence of components in a given URL
  *
  * \param url	  NetSurf URL object
  * \param part	  The URL components confirm existence of

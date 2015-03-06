@@ -116,7 +116,7 @@ int32 ami_warn_user_multi(const char *body, const char *opt1, const char *opt2, 
  * @param[out] path_out A string containing the result path which should
  *                      be freed by the caller.
  * @return NSERROR_OK and the path is written to \a path or error code
- *         on faliure.
+ *         on failure.
  */
 static nserror amiga_nsurl_to_path(struct nsurl *url, char **path_out)
 {
@@ -182,10 +182,10 @@ static nserror amiga_nsurl_to_path(struct nsurl *url, char **path_out)
  * Perform the necessary operations on a path to generate a nsurl.
  *
  * @param[in] path The path to convert.
- * @param[out] url_out pointer to recive the nsurl, The returned url
+ * @param[out] url_out pointer to receive the nsurl, The returned url
  *                     must be unreferenced by the caller.
  * @return NSERROR_OK and the url is placed in \a url or error code on
- *         faliure.
+ *         failure.
  */
 static nserror amiga_path_to_nsurl(const char *path, struct nsurl **url_out)
 {
@@ -244,7 +244,7 @@ char *translate_escape_chars(const char *s)
 }
 
 /**
- * Generate a posix path from one or more component elemnts.
+ * Generate a posix path from one or more component elements.
  *
  * If a string is allocated it must be freed by the caller.
  *
@@ -256,7 +256,7 @@ char *translate_escape_chars(const char *s)
  * @param[in] nelm The number of elements.
  * @param[in] ap The elements of the path as string pointers.
  * @return NSERROR_OK and the complete path is written to str
- *         or error code on faliure.
+ *         or error code on failure.
  */
 static nserror amiga_vmkpath(char **str, size_t *size, size_t nelm, va_list ap)
 {
@@ -335,7 +335,7 @@ static nserror amiga_vmkpath(char **str, size_t *size, size_t nelm, va_list ap)
  *                     str not NULL on input and set to the total
  *                     output length on output.
  * @return NSERROR_OK and the complete path is written to str
- *         or error code on faliure.
+ *         or error code on failure.
  */
 static nserror amiga_basename(const char *path, char **str, size_t *size)
 {

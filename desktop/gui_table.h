@@ -49,7 +49,7 @@ struct netsurf_table {
 	 * Browser table.
 	 *
 	 * Provides miscellaneous browser functionality. The table
-	 * is mandantory and must be provided.
+	 * is mandatory and must be provided.
 	 */
 	struct gui_browser_table *browser;
 
@@ -114,7 +114,7 @@ struct netsurf_table {
 	/**
 	 * Low level cache table.
 	 *
-	 * Used by the low level cache to push objects to persistant
+	 * Used by the low level cache to push objects to persistent
 	 * storage. The table is optional and may be NULL which
 	 * uses the default implementation.
 	 */

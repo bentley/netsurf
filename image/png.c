@@ -342,11 +342,11 @@ static bool nspng_process_data(struct content *c, const char *data,
 		if (png_c->bitmap != NULL) {
 			/* A bitmap managed to get created so
 			 * operation is past header and possibly some
-			 * conversion happened before faliure. 
+			 * conversion happened before failure. 
 			 *
 			 * In this case keep the partial
 			 * conversion. This is usually seen if a png
-			 * has been truncated (often jsut lost its
+			 * has been truncated (often just lost its
 			 * last byte and hence end of image marker)
 			 */
 			png_c->no_process_data = true;

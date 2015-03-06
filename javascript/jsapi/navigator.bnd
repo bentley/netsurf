@@ -54,7 +54,7 @@ preamble %{
  * language    | "<lang>"        | "<lang>"     | The language the frontend is 
  *             |                 |              |  configured for
  * ------------+-----------------+--------------+------------------------------
- * platform    | "<krn> <hw>"    | "<krn> <hw>" | Efectively uname -s -i, 
+ * platform    | "<krn> <hw>"    | "<krn> <hw>" | Effectively uname -s -i, 
  *             |                 |              |   eg "Linux x86_64"
  * ------------+-----------------+--------------+------------------------------
  * userAgent   | "Mozilla/5.0 (" | "NetSurf"    | The usual useragent string  

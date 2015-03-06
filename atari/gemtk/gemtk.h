@@ -45,8 +45,8 @@ unsigned short _systype (void);
 	printf("\th:  %d  \n", (g)->g_h);			\
 
 /*
-* Chech for GRECT intersection without modifiend the src rectangles
-* return true when the  GRECT's intersect, fals otherwise.
+* Chech for GRECT intersection without modifying the src rectangles
+* return true when the  GRECT's intersect, fails otherwise.
 */
 bool gemtk_rc_intersect_ro(GRECT *a, GRECT *b);
 

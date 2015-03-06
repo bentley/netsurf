@@ -171,7 +171,7 @@ nserror vsnstrjoin(char **str, size_t *size, char sep, size_t nelm, va_list ap)
 		}
 	}
 
-	/* copy the elements in with apropriate separator */
+	/* copy the elements in with appropriate separator */
 	curp = fname;
 	for (elm_idx = 0; elm_idx < nelm; elm_idx++) {
 		memmove(curp, elm[elm_idx], elm_len[elm_idx]);
@@ -605,7 +605,7 @@ nserror nsc_snptimet(char *str, size_t size, time_t *timep)
 	errno = 0;
 	time_out = (time_t)strtoll(str, &rstr, 10);
 
-	/* The conversion may have a range faliure or no digits were found */
+	/* The conversion may have a range failure or no digits were found */
 	if ((errno != 0) || (rstr == str)) {
 		return NSERROR_BAD_PARAMETER;
 	}

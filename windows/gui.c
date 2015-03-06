@@ -102,7 +102,7 @@ void win32_run(void)
 {
 	MSG Msg; /* message from system */
 	BOOL bRet; /* message fetch result */
-	int timeout; /* timeout in miliseconds */
+	int timeout; /* timeout in milliseconds */
 	UINT timer_id = 0;
 
 	while (!win32_quit) {
@@ -122,7 +122,7 @@ void win32_run(void)
 			/* wait for a message */
 			bRet = GetMessage(&Msg, NULL, 0, 0);
 
-			/* if a timer was sucessfully created remove it */
+			/* if a timer was successfully created remove it */
 			if (timer_id != 0) {
 				KillTimer(NULL, timer_id);
 				timer_id = 0;
@@ -575,7 +575,7 @@ get_imagelist(int resid, int bsize, int bcnt)
 
 /** create a urlbar and message handler
  *
- * Create an Edit control for enerting urls
+ * Create an Edit control for entering urls
  */
 static HWND
 nsws_window_urlbar_create(struct gui_window *gw, HWND hwndparent)
@@ -1755,7 +1755,7 @@ static void gui_window_remove_caret(struct gui_window *w)
 /**
  * Core asks front end for clipboard contents.
  *
- * \param  buffer  UTF-8 text, allocated by front end, ownership yeilded to core
+ * \param  buffer  UTF-8 text, allocated by front end, ownership yielded to core
  * \param  length  Byte length of UTF-8 text in buffer
  */
 static void gui_get_clipboard(char **buffer, size_t *length)
@@ -1851,7 +1851,7 @@ static void win32_window_reformat(struct gui_window *gw)
 }
 
 /**
- * Generate a windows path from one or more component elemnts.
+ * Generate a windows path from one or more component elements.
  *
  * If a string is allocated it must be freed by the caller.
  *
@@ -1863,7 +1863,7 @@ static void win32_window_reformat(struct gui_window *gw)
  * @param[in] nelm The number of elements.
  * @param[in] ap The elements of the path as string pointers.
  * @return NSERROR_OK and the complete path is written to str
- *         or error code on faliure.
+ *         or error code on failure.
  */
 static nserror windows_mkpath(char **str, size_t *size, size_t nelm, va_list ap)
 {
@@ -1882,7 +1882,7 @@ static nserror windows_mkpath(char **str, size_t *size, size_t nelm, va_list ap)
  *                     str not NULL on input and set to the total
  *                     output length on output.
  * @return NSERROR_OK and the complete path is written to str
- *         or error code on faliure.
+ *         or error code on failure.
  */
 static nserror windows_basename(const char *path, char **str, size_t *size)
 {
@@ -1919,7 +1919,7 @@ static nserror windows_basename(const char *path, char **str, size_t *size)
  * @param[out] path_out A string containing the result path which should
  *                      be freed by the caller.
  * @return NSERROR_OK and the path is written to \a path or error code
- *         on faliure.
+ *         on failure.
  */
 static nserror windows_nsurl_to_path(struct nsurl *url, char **path_out)
 {
@@ -1991,10 +1991,10 @@ static nserror windows_nsurl_to_path(struct nsurl *url, char **path_out)
  * Perform the necessary operations on a path to generate a nsurl.
  *
  * @param[in] path The path to convert.
- * @param[out] url_out pointer to recive the nsurl, The returned url
+ * @param[out] url_out pointer to receive the nsurl, The returned url
  *                     should be unreferenced by the caller.
  * @return NSERROR_OK and the url is placed in \a url or error code on
- *         faliure.
+ *         failure.
  */
 static nserror windows_path_to_nsurl(const char *path, struct nsurl **url_out)
 {

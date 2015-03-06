@@ -162,7 +162,7 @@ struct gui_window_table {
 	 *
 	 * This is used to perform reformats when the page contents
 	 * require reformating. The reformat is requested using
-	 * browser_window_schedule_reformat and occours via a scheduled
+	 * browser_window_schedule_reformat and occurs via a scheduled
 	 * callback hence from top level context.
 	 *
 	 * \param g gui_window to reformat.

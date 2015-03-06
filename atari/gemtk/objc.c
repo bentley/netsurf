@@ -376,7 +376,7 @@ OBJECT *gemtk_obj_tree_copy(OBJECT *tree)
  * \param selected The text of the selected item
  * \param horizontal Set to true to render the tree horizontally
  * \param max_width -1: autodetect width
- * \param max_heigth -1: autodetect height (set to postive value when using a vertical scrolling popup)
+ * \param max_height -1: autodetect height (set to postive value when using a vertical scrolling popup)
  * \return a pointer to the new OBJECT tree
  */
 OBJECT * gemtk_obj_create_popup_tree(const char **items, int nitems,

@@ -1400,9 +1400,9 @@ const char *ro_gui_default_language(void)
  * Perform the necessary operations on a path to generate a nsurl.
  *
  * @param[in] path The RISC OS pathname to convert.
- * @param[out] url_out pointer to recive the nsurl, The returned url must be
+ * @param[out] url_out pointer to receive the nsurl, The returned url must be
  *                 unreferenced by the caller.
- * @return NSERROR_OK and the url is placed in \a url or error code on faliure.
+ * @return NSERROR_OK and the url is placed in \a url or error code on failure.
  */
 static nserror ro_path_to_nsurl(const char *path, struct nsurl **url_out)
 {
@@ -1486,7 +1486,7 @@ static nserror ro_path_to_nsurl(const char *path, struct nsurl **url_out)
  * @param[out] path_out A string containing the result path which should
  *                      be freed by the caller.
  * @return NSERROR_OK and the path is written to \a path or error code
- *         on faliure.
+ *         on failure.
  */
 static nserror ro_nsurl_to_path(struct nsurl *url, char **path_out)
 {
@@ -2153,7 +2153,7 @@ bool ro_gui_prequit(void)
 
 
 /**
- * Generate a riscos path from one or more component elemnts.
+ * Generate a riscos path from one or more component elements.
  *
  * Constructs a complete path element from passed components. The
  * second (and subsequent) components have a slash substituted for all
@@ -2169,7 +2169,7 @@ bool ro_gui_prequit(void)
  * @param[in] nelm The number of elements.
  * @param[in] ap The elements of the path as string pointers.
  * @return NSERROR_OK and the complete path is written to str
- *         or error code on faliure.
+ *         or error code on failure.
  */
 static nserror riscos_mkpath(char **str, size_t *size, size_t nelm, va_list ap)
 {
@@ -2231,7 +2231,7 @@ static nserror riscos_mkpath(char **str, size_t *size, size_t nelm, va_list ap)
 		curp++;
 	}
 
-	/* subsequent elemnts have slashes substituted with directory
+	/* subsequent elements have slashes substituted with directory
 	 * separators.
 	 */
 	for (elm_idx = 1; elm_idx < nelm; elm_idx++) {
@@ -2274,7 +2274,7 @@ static nserror riscos_mkpath(char **str, size_t *size, size_t nelm, va_list ap)
  *                     str not NULL on input and set to the total
  *                     output length on output.
  * @return NSERROR_OK and the complete path is written to str
- *         or error code on faliure.
+ *         or error code on failure.
  */
 static nserror riscos_basename(const char *path, char **str, size_t *size)
 {

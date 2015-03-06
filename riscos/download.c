@@ -1016,7 +1016,7 @@ void ro_gui_download_datasave_ack(wimp_message *message)
 /**
  * Return a pathname in canonical form
  *
- * \param  path  pathnamee to be canonicalised
+ * \param  path  pathname to be canonicalised
  * \return ptr to pathname in malloc block, or NULL
  */
 

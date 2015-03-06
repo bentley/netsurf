@@ -10,7 +10,7 @@ Overview
 
   The users configurations are generally stored in a "Choices" file
    and are loaded at browser startup. Most user interfaces provide a
-   way to configure these parameters in a manner consistant with the
+   way to configure these parameters in a manner consistent with the
    toolkit in use.
 
   The user choices are stored as a simple key:value list.

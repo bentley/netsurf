@@ -30,8 +30,8 @@
  * option table which would let us to make the option structure
  * opaque.
  *
- * All the actual acessors assume direct access to a global option
- * table (nsoptions). To avoid this the acessors would have to take a
+ * All the actual accessors assume direct access to a global option
+ * table (nsoptions). To avoid this the accessors would have to take a
  * pointer to the active options table and be implemented as functions
  * within nsoptions.c
  *
@@ -227,7 +227,7 @@ nserror nsoption_dump(FILE *outf, struct nsoption_s *opts);
 
 
 /**
- * Process commandline and set options approriately.
+ * Process commandline and set options appropriately.
  *
  * @param pargc Pointer to the size of the argument vector.
  * @param argv The argument vector.

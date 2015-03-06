@@ -21,8 +21,8 @@
  * NetSurf URL handling implementation.
  *
  * This is the common implementation of all URL handling within the
- * browser. This implemntation is based upon RFC3986 although this has
- * been superceeded by https://url.spec.whatwg.org/ which is based on
+ * browser. This implementation is based upon RFC3986 although this has
+ * been superseded by https://url.spec.whatwg.org/ which is based on
  * actual contemporary implementations.
  */
 

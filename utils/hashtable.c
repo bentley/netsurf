@@ -79,7 +79,7 @@ static inline unsigned int hash_string_fnv(const char *datum, unsigned int *len)
  *		  should be a prime number, and ideally a prime number just
  *		  over a power of two, for best performance and distribution.
  * \return struct hash_table containing the context of this hash table or NULL
- *	   if there is insufficent memory to create it and its chains.
+ *	   if there is insufficient memory to create it and its chains.
  */
 
 struct hash_table *hash_create(unsigned int chains)
@@ -136,14 +136,14 @@ void hash_destroy(struct hash_table *ht)
 /**
  * Adds a key/value pair to a hash table.  If the key you're adding is already
  * in the hash table, it does not replace it, but it does take precedent over
- * it.  The old key/value pair will be inaccessable but still in memory until
+ * it.  The old key/value pair will be inaccessible but still in memory until
  * hash_destroy() is called on the hash table.
  *
  * \param  ht	  The hash table context to add the key/value pair to.
  * \param  key	  The key to associate the value with.  A copy is made.
  * \param  value  The value to associate the key with.  A copy is made.
  * \return true if the add succeeded, false otherwise.  (Failure most likely
- *	   indicates insufficent memory to make copies of the key and value.
+ *	   indicates insufficient memory to make copies of the key and value.
  */
 
 bool hash_add(struct hash_table *ht, const char *key, const char *value)

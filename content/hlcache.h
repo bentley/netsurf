@@ -104,7 +104,7 @@ void hlcache_finalise(void);
  * \param pw              Pointer to client-specific data for callback
  * \param child           Child retrieval context, or NULL for top-level content
  * \param accepted_types  Bitmap of acceptable content types
- * \param result          Pointer to location to recieve cache handle
+ * \param result          Pointer to location to receive cache handle
  * \return NSERROR_OK on success, appropriate error otherwise
  *
  * Child contents are keyed on the tuple < URL, quirks >.
@@ -161,7 +161,7 @@ nserror hlcache_handle_replace_callback(hlcache_handle *handle,
  * hlcache_handle (e.g. because the source data is still being fetched, so it
  * doesn't exist yet), then these veneers would behave as a NOP. The important
  * thing being that the client need not care about this possibility and can
- * just call the functions with impugnity.
+ * just call the functions with impunity.
  */
 struct content *hlcache_handle_get_content(const hlcache_handle *handle);
 

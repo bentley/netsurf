@@ -43,7 +43,7 @@ static struct gui_clipboard {
 /**
  * Core asks front end for clipboard contents.
  *
- * \param  buffer  UTF-8 text, allocated by front end, ownership yeilded to core
+ * \param  buffer  UTF-8 text, allocated by front end, ownership yielded to core
  * \param  length  Byte length of UTF-8 text in buffer
  */
 static void gui_get_clipboard(char **buffer, size_t *length)

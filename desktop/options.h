@@ -23,7 +23,7 @@
  *
  * Platform specific options should be added in the platform options.h.
  *
- * This header is specificaly intented to be included multiple times
+ * This header is specifically intended to be included multiple times
  *   with different macro definitions so there is no guard
  */
 

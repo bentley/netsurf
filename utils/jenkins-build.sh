@@ -35,7 +35,7 @@
 
 #####
 
-# set defaults - this is not retrivable from the jenkins environment
+# set defaults - this is not retrievable from the jenkins environment
 OLD_ARTIFACT_COUNT=25
 
 ################# Parameter and environment setup #####################

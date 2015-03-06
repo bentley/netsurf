@@ -121,7 +121,7 @@ static unsigned int imagemap_hash(const char *key)
  * \param c The containing content
  * \param key The name of the imagemap
  * \param list List of map regions
- * \return true on succes, false otherwise
+ * \return true on success, false otherwise
  */
 static bool
 imagemap_add(html_content *c, dom_string *key, struct mapentry *list)

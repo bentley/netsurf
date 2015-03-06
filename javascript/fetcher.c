@@ -217,7 +217,7 @@ static void fetch_javascript_poll(lwc_string *scheme)
 /**
  * Register javascript scheme fetcher with fetcher factory.
  *
- * \return NSERROR_OK on success or appropriate error code on faliure.
+ * \return NSERROR_OK on success or appropriate error code on failure.
 */
 nserror fetch_javascript_register(void)
 {

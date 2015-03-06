@@ -278,7 +278,7 @@ fb_text_input_remove_caret_cb(fbtk_widget_t *widget)
 	}
 }
 
-/** Routine called when text events occour in writeable widget.
+/** Routine called when text events occur in writeable widget.
  *
  * @param widget The widget reciving input events.
  * @param cbi The callback parameters.
@@ -379,7 +379,7 @@ text_input(fbtk_widget_t *widget, fbtk_callback_info *cbi)
 	case NSFB_KEY_UP:
 	case NSFB_KEY_DOWN:
 		/* Not handling any of these correctly yet, but avoid putting
-		 * charcters in the text widget when they're pressed. */
+		 * characters in the text widget when they're pressed. */
 		break;
 
 	case NSFB_KEY_RSHIFT:
@@ -449,7 +449,7 @@ text_input(fbtk_widget_t *widget, fbtk_callback_info *cbi)
 	return 0;
 }
 
-/** Routine called when click events occour in writeable widget.
+/** Routine called when click events occur in writeable widget.
  *
  * @param widget The widget reciving click events.
  * @param cbi The callback parameters.
@@ -483,7 +483,7 @@ text_input_click(fbtk_widget_t *widget, fbtk_callback_info *cbi)
 	return 0;
 }
 
-/** Routine called when "stripped of focus" event occours for writeable widget.
+/** Routine called when "stripped of focus" event occurs for writeable widget.
  *
  * @param widget The widget reciving "stripped of focus" event.
  * @param cbi The callback parameters.

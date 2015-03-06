@@ -38,7 +38,7 @@ enum fbtk_widgettype_e {
  * A widget is an entry in a tree structure which represents a
  * rectangular area with co-ordinates relative to its parent widget.
  * This area has a distinct set of callback operations for handling
- * events which occour within its boundries. A widget may have an
+ * events which occur within its boundaries. A widget may have an
  * arbitrary number of child widgets. The order within the tree
  * determines a widgets z order.
  *
@@ -216,7 +216,7 @@ struct fbtk_widget_s {
  */
 
 
-/** creates a new widget and insert it into to hierachy.
+/** creates a new widget and insert it into to hierarchy.
  *
  * The widget is set to defaults of false, 0 or NULL.
  *

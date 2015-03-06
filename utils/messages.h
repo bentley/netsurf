@@ -26,7 +26,7 @@
  * messages_get("key").
  *
  * It can also load additional messages files into different contexts and allow
- * you to look up values in it independantly from the standard shared Messages
+ * you to look up values in it independently from the standard shared Messages
  * file table.  Use the _ctx versions of the functions to do this.
  */
 
@@ -42,7 +42,7 @@
  * are present already are replaced with the new value.
  *
  * \param path pathname of messages file.
- * \return NSERROR_OK on success or error code on faliure.
+ * \return NSERROR_OK on success or error code on failure.
  */
 nserror messages_load(const char *path);
 

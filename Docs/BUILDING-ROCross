@@ -61,7 +61,7 @@
   B. NetSurf libraries
 ----------------------
 
-  Install the NetSirf project's libraries as follows.
+  Install the NetSurf project's libraries as follows.
 
       $ cd ~
 
@@ -94,7 +94,7 @@
 
       $ (cd netsurf/libcss ; make TARGET=riscos install)
 
-  C. Ancilliary tools
+  C. Ancillary tools
 ---------------------
 
       $ svn co svn://svn.riscos.info/ccres/trunk ccres

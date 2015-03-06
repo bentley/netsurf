@@ -543,7 +543,7 @@ static const struct printer gtk_printer = {
 /** 
  * Handle the begin_print signal from the GtkPrintOperation
  *
- * \param operation the operation which emited the signal
+ * \param operation the operation which emitted the signal
  * \param context the print context used to set up the pages
  * \param user_data nothing in here
  */

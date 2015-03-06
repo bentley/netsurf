@@ -456,7 +456,7 @@ nsgtk_window_tabs_remove(GtkNotebook *notebook,
 			 struct nsgtk_scaffolding *gs)
 {
 	/* if the scaffold is being destroyed it is not useful to
-	 * update the state, futher many of the widgets may have
+	 * update the state, further many of the widgets may have
 	 * already been destroyed.
 	 */
 	if (gtk_widget_in_destruction(GTK_WIDGET(gs->window)) == TRUE) {

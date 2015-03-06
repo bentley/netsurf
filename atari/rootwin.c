@@ -494,7 +494,7 @@ void window_set_content_size(ROOTWIN *rootwin, int width, int height)
     gemtk_wm_update_slider(rootwin->win, GEMTK_WM_VH_SLIDER);
 }
 
-/* set focus to an arbitary element */
+/* set focus to an arbitrary element */
 void window_set_focus(struct s_gui_win_root *rootwin,
                       enum focus_element_type type, void * element)
 {
@@ -538,7 +538,7 @@ bool window_url_widget_has_focus(struct s_gui_win_root *rootwin)
     return false;
 }
 
-/* check if an arbitary window widget / or frame has the focus */
+/* check if an arbitrary window widget / or frame has the focus */
 bool window_widget_has_focus(struct s_gui_win_root *rootwin,
                              enum focus_element_type t, void * element)
 {

@@ -58,7 +58,7 @@ nserror browser_window_history_clone(const struct browser_window *existing,
  * \param  bw       browser window with history object
  * \param  content  content to add to history
  * \param  frag_id  fragment identifier, or NULL.
- * \return NSERROR_OK or error code on faliure.
+ * \return NSERROR_OK or error code on failure.
  *
  * The page is added after the current entry and becomes current.
  */
@@ -70,7 +70,7 @@ nserror browser_window_history_add(struct browser_window *bw,
  *
  * \param bw The browser window to update the history within.
  * \param content content for current entry
- * \return NSERROR_OK or error code on faliure.
+ * \return NSERROR_OK or error code on failure.
  */
 nserror browser_window_history_update(struct browser_window *bw,
 		struct hlcache_handle *content);
@@ -87,7 +87,7 @@ void browser_window_history_destroy(struct browser_window *bw);
  *
  * \param bw A browser window to navigate the history in.
  * \param new_window whether to open in new window.
- * \return NSERROR_OK or error code on faliure.
+ * \return NSERROR_OK or error code on failure.
  */
 nserror browser_window_history_back(struct browser_window *bw, bool new_window);
 
@@ -96,12 +96,12 @@ nserror browser_window_history_back(struct browser_window *bw, bool new_window);
  *
  * \param bw A browser window to navigate the history in.
  * \param new_window whether to open in new window.
- * \return NSERROR_OK or error code on faliure.
+ * \return NSERROR_OK or error code on failure.
  */
 nserror browser_window_history_forward(struct browser_window *bw, bool new_window);
 
 /**
- * Check whether it is pssible to go back in the history.
+ * Check whether it is possible to go back in the history.
  *
  * \param bw A browser window to check the history navigation in.
  * \return true if the history can go back, false otherwise
@@ -109,7 +109,7 @@ nserror browser_window_history_forward(struct browser_window *bw, bool new_windo
 bool browser_window_history_back_available(struct browser_window *bw);
 
 /**
- * Check whether it is pssible to go forwards in the history.
+ * Check whether it is possible to go forwards in the history.
  *
  * \param bw A browser window to check the history navigation in.
  * \return true if the history can go forwards, false otherwise
@@ -251,7 +251,7 @@ const char *browser_window_history_entry_get_title(
  * \param  bw          browser window
  * \param  entry       entry to open
  * \param  new_window  open entry in new window
- * \return NSERROR_OK or error code on faliure.
+ * \return NSERROR_OK or error code on failure.
  */
 nserror browser_window_history_go(struct browser_window *bw,
 		struct history_entry *entry, bool new_window);

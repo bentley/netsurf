@@ -304,7 +304,7 @@ bool ro_gui_global_history_menu_prepare(wimp_w w, wimp_i i, wimp_menu *menu,
 }
 
 /**
- * Handle submenu warnings for the global_hostory menu
+ * Handle submenu warnings for the global_history menu
  *
  * \param  w			The window owning the menu.
  * \param  i			The icon owning the menu.

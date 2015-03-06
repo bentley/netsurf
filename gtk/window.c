@@ -735,7 +735,7 @@ gui_window_create(struct browser_window *bw,
 	bool tempback;
 	GtkBuilder* xml;
 
-	/* open builder file first to ease error handling on faliure */
+	/* open builder file first to ease error handling on failure */
 	xml = gtk_builder_new();
 	if (!gtk_builder_add_from_file(xml,
 				       glade_file_location->tabcontents,

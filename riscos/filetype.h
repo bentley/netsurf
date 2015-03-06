@@ -17,7 +17,7 @@
  */
 
 /** \file riscos/filetype.h
- * RISC OS filetpe interface.
+ * RISC OS filetype interface.
  */
 
 #ifndef _NETSURF_RISCOS_FILETYPE_H_

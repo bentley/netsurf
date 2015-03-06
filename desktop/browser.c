@@ -567,7 +567,7 @@ void browser_window_set_scroll(struct browser_window *bw, int x, int y)
  * \param[in] x x-coordinate of point of interest
  * \param[in] y y-coordinate of point of interest
  * \param[out] data Feature structure to update.
- * \return NSERROR_OK or appropriate error code on faliure.
+ * \return NSERROR_OK or appropriate error code on failure.
  */
 static nserror
 browser_window__get_contextual_content(struct browser_window *bw,
@@ -2518,7 +2518,7 @@ void browser_window_reformat(struct browser_window *bw, bool background,
 }
 
 /**
- * Set bowser window scale.
+ * Set browser window scale.
  *
  * \param bw Browser window.
  * \param scale value.

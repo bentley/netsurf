@@ -115,13 +115,13 @@ void atari_treeview_get_grect(struct core_window *cw, enum treeview_area_e mode,
 void atari_treeview_redraw(struct core_window *cw);
 
 /**
- * Attach arbitary user data to the treeview.
+ * Attach arbitrary user data to the treeview.
 */
 void atari_treeview_set_user_data(struct core_window *cw,
 								void *user_data_ptr);
 
 /**
- * Return the arbitary user data set by atari_treeview_set_user_data()
+ * Return the arbitrary user data set by atari_treeview_set_user_data()
  */
 void *atari_treeview_get_user_data(struct core_window *cw);
 

@@ -1217,7 +1217,7 @@ static bool gui_window_scroll_start(struct gui_window *g)
  * \param  g	gui window containing the drag
  * \param  type	type of drag the core is performing
  * \param  rect rectangle to constrain pointer to (relative to drag start coord)
- * \return true iff succesful
+ * \return true iff successful
  */
 
 static bool gui_window_drag_start(struct gui_window *g, gui_drag_type type,
@@ -4756,7 +4756,7 @@ struct gui_window *ro_gui_toolbar_lookup(wimp_w window)
  * \param  g	gui window
  * \param  x	x ordinate
  * \param  y	y ordinate
- * \param  pos  receives position in window co-ordinatates
+ * \param  pos  receives position in window co-ordinates
  * \return true iff conversion successful
  */
 
@@ -4788,7 +4788,7 @@ bool ro_gui_window_to_window_pos(struct gui_window *g, int x, int y,
  * \param  g	gui window
  * \param  x	x ordinate
  * \param  y	y ordinate
- * \param  pos  receives position in screen co-ordinatates
+ * \param  pos  receives position in screen co-ordinates
  * \return true iff conversion successful
  */
 

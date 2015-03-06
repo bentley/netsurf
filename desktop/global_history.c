@@ -504,7 +504,7 @@ static bool global_history_add_entry(nsurl *url,
 }
 
 /**
- * Initialise the treeview entry feilds
+ * Initialise the treeview entry fields
  *
  * \return NSERROR_OK on success, or appropriate error otherwise
  */

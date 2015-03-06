@@ -51,7 +51,7 @@ Example: retrieving a top-level resource
   2) High-level cache asks low-level cache for low-level handle for URL.
   3) Low-level cache looks for appropriate object in its index.
      a) it finds one that's not stale and returns its handle
-     b) it finds only stale entries, or no appropiate entry,
+     b) it finds only stale entries, or no appropriate entry,
         so allocates a new entry, requests a fetch for it, 
         and returns the handle.
   4) High-level cache looks for content objects that are using the low-level 

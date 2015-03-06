@@ -120,7 +120,7 @@ static css_stylesheet *blank_import;
  * \param fallback_charset The character set to fallback to.
  * \param quirks allow quirks
  * \param c Content to initialise
- * \return NSERROR_OK or error cod eon faliure
+ * \return NSERROR_OK or error code on failure
  */
 static nserror
 nscss_create(const content_handler *handler,

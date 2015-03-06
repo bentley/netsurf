@@ -994,7 +994,7 @@ static bool parse_chunk(struct parse_context *ctx, const char *buf, size_t len,
 	}
 
 	for (i = 0; i < 4; i++) {
-		LOG(LOG_DEBUG, "  %s: %i gylphs\n", labels[i],
+		LOG(LOG_DEBUG, "  %s: %i glyphs\n", labels[i],
 				ctx->count[i] - count[i]);
 	}
 
@@ -1097,11 +1097,11 @@ bool load_font(const char *path, struct font_data **data)
 	LOG(LOG_INFO, "Parsing complete:\n");
 	count = 0;
 	for (i = 0; i < 4; i++) {
-		LOG(LOG_INFO, "  %s: %i gylphs\n", labels[i], ctx.count[i]);
+		LOG(LOG_INFO, "  %s: %i glyphs\n", labels[i], ctx.count[i]);
 		count += ctx.count[i];
 	}
 
-	LOG(LOG_RESULT, "  Total %i gylphs "
+	LOG(LOG_RESULT, "  Total %i glyphs "
 			"(of which %i unique, %i codepoints, %i duplicates)\n",
 			count, d->glyphs, ctx.codepoints,
 			count - d->glyphs - ctx.codepoints);

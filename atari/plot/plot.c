@@ -997,7 +997,7 @@ inline static bool ablend_bitmap( struct bitmap * img, struct bitmap * bg,
 
 #ifdef WITH_8BPP_SUPPORT
 /**
- * Convert an bitmap to an 8 bit device dependant MFDB
+ * Convert an bitmap to an 8 bit device dependent MFDB
  * \param img the bitmap (only tested with 32bit bitmaps)
  * \param x screen coord of the background
  * \param y screen coord of the background
@@ -1514,7 +1514,7 @@ bool plot_blit_mfdb(GRECT * loc, MFDB * insrc, short fgcolor,
 
 /*
 Init screen and font driver objects.
-Returns non-zero value > -1 when the objects could be succesfully created.
+Returns non-zero value > -1 when the objects could be successfully created.
 Returns value < 0 to indicate an error
 */
 

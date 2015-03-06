@@ -200,7 +200,7 @@ struct host_part {
 	char *part;		/**< Part of host string */
 
 	struct prot_space_data *prot_space;	/**< Linked list of all known
-				 * proctection spaces known for his host and
+				 * protection spaces known for his host and
 				 * all its schems and ports. */
 
 	struct host_part *next;	/**< Next sibling */
@@ -2203,7 +2203,7 @@ static void urldb_delete_cookie_paths(const char *domain, const char *path,
 
 
 /**
- * Deletes cookie hosts and their assoicated paths
+ * Deletes cookie hosts and their associated paths
  */
 static void urldb_delete_cookie_hosts(const char *domain, const char *path,
 		const char *name, struct host_part *parent)

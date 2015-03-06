@@ -55,7 +55,7 @@ enum path_command {
  *  path	- Plots a path consisting of cubic Bezier curves. Line colour is
  *		  given by c and fill colour is given by fill.
  *  polygon	- Plots a filled polygon with straight lines between points.
- *		  The lines around the edge of the ploygon are not plotted. The
+ *		  The lines around the edge of the polygon are not plotted. The
  *		  polygon is filled with the non-zero winding rule.
  *  rectangle	- Plots a rectangle outline. The line can be solid, dotted or
  *		  dashed. Top left corner at (x0,y0) and rectangle has given

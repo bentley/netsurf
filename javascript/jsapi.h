@@ -17,7 +17,7 @@
  */
 
 /** \file
- * spidermonkey jsapi compatability glue.
+ * spidermonkey jsapi compatibility glue.
  */
 
 #ifndef _NETSURF_JAVASCRIPT_JSAPI_H_

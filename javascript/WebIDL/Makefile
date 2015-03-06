@@ -3,9 +3,9 @@
 # Create the WebIDL for core DOM and HTML spec directly from
 #  downloaded specifications. The resulting IDL is pretty close but
 #  carries the example text etc. and should be manually cleaned up and
-#  tagged with the retrival date and source URL
+#  tagged with the retrieval date and source URL
 #
-# needs debin packages: curl w3m tidy html-xml-utils
+# needs debian packages: curl w3m tidy html-xml-utils
 #
 # Copyright 2012 Vincent Sanders 
 # MIT licenced

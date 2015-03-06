@@ -47,7 +47,7 @@ static short get_avserver(void)
 }
 
 /**
- * initialitze the AV client API
+ * initialise the AV client API
  * \param appname Name of the application passed to menu_register()
  * \return returns 1 on success, otherwise an negative error code.
  *

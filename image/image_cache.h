@@ -25,11 +25,11 @@
  *
  * The bitmap structure is opaque to the rest of netsurf and is
  * controlled by the platform-specific code (see image/bitmap.h for
- * detials). All image content handlers convert into this format and
+ * details). All image content handlers convert into this format and
  * pass it to the plot functions for display,
  * 
  * This cache maintains a link between the underlying original content
- * and the intermediate representation. It is intended to be flexable
+ * and the intermediate representation. It is intended to be flexible
  * and either manage the bitmap plotting completely or give the image
  * content handler complete control.
  */
@@ -132,20 +132,20 @@ int image_cache_snentryf(char *string, size_t size, unsigned int entryn,
  * f The largest amount of space the cache has occupied since initialisation
  * g The number of objetcs when the cache was at its largest
  * h The largest number of images in the cache since initialisation
- * i The size of the cache when the largest number of objects occoured
+ * i The size of the cache when the largest number of objects occurred
  * j The total number of read operations performed on the cache
  * k The total number of read operations satisfied from the cache without 
  *     conversion.
  * l The total number of read operations satisfied from the cache which 
  *     required a conversion.
- * m The total number of read operations which could not be sucessfully 
+ * m The total number of read operations which could not be successfully 
  *     returned. ie. not available in cache and conversion failed.
  * n The total size  of read operations performed on the cache
  * o The total size of read operations satisfied from the cache without 
  *     conversion.
  * q The total size of read operations satisfied from the cache which 
  *     required a conversion.
- * r The total size of read operations which could not be sucessfully 
+ * r The total size of read operations which could not be successfully 
  *     returned. ie. not available in cache and conversion failed.
  * s The number of images which were placed in the cache but never read.
  * t The number of images that were converted on insertion into the cache which were subsequently never used.
@@ -173,7 +173,7 @@ int image_cache_snsummaryf(char *string, size_t size, const char *fmt);
 /** Generic content redraw callback
  *
  * May be used by image content handlers as their redraw
- * callback. Performs all neccissary cache lookups and conversions and
+ * callback. Performs all necessary cache lookups and conversions and
  * calls the bitmap plot function in the redraw context.
  */
 bool image_cache_redraw(struct content *c, 

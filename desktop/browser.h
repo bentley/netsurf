@@ -337,7 +337,7 @@ float browser_window_get_scale(struct browser_window *bw);
  * \param[in] x x-coordinate of point of interest
  * \param[in] y y-coordinate of point of interest
  * \param[out] data Feature structure to update.
- * \return NSERROR_OK or appropriate error code on faliure.
+ * \return NSERROR_OK or appropriate error code on failure.
  */
 nserror browser_window_get_features(struct browser_window *bw,
 		int x, int y, struct browser_window_features *data);
@@ -672,7 +672,7 @@ int browser_get_dpi(void);
  * \param bw The browser window.
  * \param f The file to dump to.
  * \param op The debug operation type to dump.
- * \return NSERROR_OK on success or error code on faliure.
+ * \return NSERROR_OK on success or error code on failure.
  */
 nserror browser_window_debug_dump(struct browser_window *bw, FILE *f, enum content_debug op);
 
@@ -680,7 +680,7 @@ nserror browser_window_debug_dump(struct browser_window *bw, FILE *f, enum conte
  * set debug options on a window
  * \param bw The browser window.
  * \param op The debug operation type.
- * \return NSERROR_OK on success or error code on faliure.
+ * \return NSERROR_OK on success or error code on failure.
  */
 nserror browser_window_debug(struct browser_window *bw, enum content_debug op);
 

@@ -1223,7 +1223,7 @@ static bool textarea_reflow_multiline(struct textarea *ta,
  * \param ta		textarea widget
  * \param x		X coordinate
  * \param y		Y coordinate
- * \param visible	true iff (x,y) is wrt visiable area, false for global
+ * \param visible	true iff (x,y) is wrt visible area, false for global
  * \return byte offset
  */
 static size_t textarea_get_b_off_xy(struct textarea *ta, int x, int y,
@@ -1280,7 +1280,7 @@ static size_t textarea_get_b_off_xy(struct textarea *ta, int x, int y,
  * \param ta		textarea widget
  * \param x		X coordinate
  * \param y		Y coordinate
- * \param visible	true iff (x,y) is wrt visiable area, false for global
+ * \param visible	true iff (x,y) is wrt visible area, false for global
  * \return true iff caret placement caused a scroll
  */
 static bool textarea_set_caret_xy(struct textarea *ta, int x, int y,
@@ -1403,7 +1403,7 @@ static inline void textarea_char_to_byte_offset(struct textarea_utf8 *text,
 
 
 /**
- * Perform actual text replacment in a textarea
+ * Perform actual text replacement in a textarea
  *
  * \param ta		Textarea widget
  * \param b_start	Start byte index of replaced section (inclusive)

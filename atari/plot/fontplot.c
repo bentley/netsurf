@@ -52,7 +52,7 @@ void dump_font_drivers(void)
  *
  * \param vdihandle the vdi handle to act upon,
  * \param name selector ID (string) of the font plotter.
- * \param flags configration flags of the plotter, available flags:
+ * \param flags configuration flags of the plotter, available flags:
  *	             FONTPLOT_FLAG_MONOGLYPH - Enable 1 bit font plotting
  * \param error set to != 0 when errors occur
  * \return the new font plotter instance on success, or NULL on failure.

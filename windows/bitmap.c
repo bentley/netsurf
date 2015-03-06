@@ -171,7 +171,7 @@ bool bitmap_save(void *bitmap, const char *path, unsigned flags)
 
 
 /**
- * The bitmap image has changed, so flush any persistant cache.
+ * The bitmap image has changed, so flush any persistent cache.
  *
  * \param  bitmap  a bitmap, as returned by bitmap_create()
  */

@@ -33,7 +33,7 @@ struct nsurl;
 /**
  * Graphical user interface browser misc function table.
  *
- * function table implementing GUI interface to miscelaneous browser
+ * function table implementing GUI interface to miscellaneous browser
  * functionality
  */
 struct gui_browser_table {
@@ -46,7 +46,7 @@ struct gui_browser_table {
 	 *          negative value to remove any existing callback.
 	 * \param callback callback function
 	 * \param p user parameter passed to callback function
-	 * \return NSERROR_OK on sucess or appropriate error on faliure
+	 * \return NSERROR_OK on success or appropriate error on failure
 	 *
 	 * The callback function will be called as soon as possible
 	 * after the timeout has elapsed.

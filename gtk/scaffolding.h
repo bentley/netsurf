@@ -128,7 +128,7 @@ struct nsgtk_scaffolding *nsgtk_new_scaffolding(struct gui_window *gw);
  */
 struct nsgtk_scaffolding *nsgtk_current_scaffolding(void);
 
-/* acessors for gtk elements withing a scaffold */
+/* accessors for gtk elements withing a scaffold */
 
 /**
  * Get the gtk window for a scaffolding.
@@ -234,7 +234,7 @@ gboolean nsgtk_window_url_changed(GtkWidget *, GdkEventKey *, gpointer);
 
 nserror nsgtk_scaffolding_new_tab(struct gui_window *gw);
 
-/* core acessors */
+/* core accessors */
 /**
  * set the title in the window
  *

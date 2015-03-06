@@ -345,6 +345,6 @@ Index: framebuffer/font_freetype.c
 
   The defaults are for 800 by 600 pixels at 16bpp and 70Hz refresh rate.
 
-  The documentation of libnsfb should be consulted for futher
+  The documentation of libnsfb should be consulted for further
   information about supported frontends and their configuration.
 

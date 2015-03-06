@@ -26,7 +26,7 @@
  * \param  t         interval before the callback should be made / ms
  * \param  callback  callback function
  * \param  p         user parameter, passed to callback function
- * \return NSERROR_OK on sucess or appropriate error on faliure
+ * \return NSERROR_OK on success or appropriate error on failure
  *
  * The callback function will be called as soon as possible after t ms have
  * passed.

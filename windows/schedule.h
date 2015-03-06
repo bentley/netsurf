@@ -52,7 +52,7 @@ nserror win32_schedule(int ival, void (*callback)(void *p), void *p);
  *     list enumeration to the beginning every time an event is
  *     dispatched.
  *
- * @return The number of milliseconds untill the next scheduled event
+ * @return The number of milliseconds until the next scheduled event
  * or -1 for no event.
  */
 int schedule_run(void);

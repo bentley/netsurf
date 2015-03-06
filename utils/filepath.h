@@ -66,7 +66,7 @@ char *filepath_findfile(const char *format, ...);
  * Searches an array of resource paths for a file.
  *
  * Iterates through a vector of resource paths and returns the
- * normalised file name of the first acessible file or NULL if no file
+ * normalised file name of the first accessible file or NULL if no file
  * can be found in any of the resource paths.
  *
  * @param respathv The resource path vector to iterate.
@@ -91,7 +91,7 @@ char *filepath_find(char **respathv, const char *filename);
  *
  * Similar to filepath_sfind except if no resource is found the default
  * is used as an additional path element to search, if that still
- * fails the returned path is set to the concatination of the default
+ * fails the returned path is set to the concatenation of the default
  * path and the filename.
  */
 char *filepath_sfinddef(char **respathv, char *filepath, const char *filename,
@@ -101,7 +101,7 @@ char *filepath_sfinddef(char **respathv, char *filepath, const char *filename,
 /**
  * Merge two string vectors into a resource search path vector.
  *
- * @param pathv A string vector containing path elemets to scan.
+ * @param pathv A string vector containing path elements to scan.
  * @param langv A string vector containing language names to enumerate.
  * @return A pointer to a NULL terminated string vector of valid
  *         resource directories.

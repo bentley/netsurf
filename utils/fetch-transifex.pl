@@ -22,7 +22,7 @@
 
 =head1
 
-retrive resource from transifex service
+retrieve resource from transifex service
 
 =cut
 

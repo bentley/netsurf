@@ -67,7 +67,7 @@ enum search_web_omni_flags {
  *
  * \param term The search term.
  * \param flags Flags to control operation.
- * \param url_out The ourput url on success.
+ * \param url_out The output url on success.
  * \return NSERROR_OK on success or appropriate error code.
  */
 nserror search_web_omni(const char *term, enum search_web_omni_flags flags, struct nsurl **url_out);

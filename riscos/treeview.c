@@ -651,7 +651,7 @@ void ro_treeview_set_window_extent(ro_treeview *tv, int width, int height)
 
 		/* If the window is currently open, and the exising visible
 		 * area is bigger than the new extent, then we need to reopen
-		 * the window in an appropriare position before setting the
+		 * the window in an appropriate position before setting the
 		 * new extent.
 		 */
 
@@ -1287,7 +1287,7 @@ void ro_treeview_button_click(void *data,
  * Return a token identifying the interactive help message for a given cursor
  * position.
  *
- * Currently this is inimplemented.
+ * Currently this is unimplemented.
  *
  * \param  *message_data	Pointer to the Wimp's help message block.
  * \return			Token value (-1 indicates no help available).

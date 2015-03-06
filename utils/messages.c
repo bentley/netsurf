@@ -49,7 +49,7 @@ static struct hash_table *messages_hash = NULL;
  *
  * \param  path  pathname of messages file
  * \param  ctx   reference of hash table to merge with.
- * \return NSERROR_OK on sucess and ctx updated or error code on faliure.
+ * \return NSERROR_OK on success and ctx updated or error code on failure.
  */
 static nserror messages_load_ctx(const char *path, struct hash_table **ctx)
 {
@@ -133,7 +133,7 @@ messages_get_ctx(const char *key, struct hash_table *ctx)
 		r = hash_get(ctx, key);
 	}
 
-	/* If called with no context or unable to retrive a value
+	/* If called with no context or unable to retrieve a value
 	 * return the key.
 	 */
 	if (r == NULL) {

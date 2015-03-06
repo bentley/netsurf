@@ -46,7 +46,7 @@ int nsc_sntimet(char *str, size_t size, time_t *timep);
  * @param str The source buffer.
  * @param size The length of the source buffer.
  * @param timep Pointer to result.
- * @return NSERROR_OK on success or error code on faliure.
+ * @return NSERROR_OK on success or error code on failure.
  */
 nserror nsc_snptimet(char *str, size_t size, time_t *timep);
 

@@ -138,7 +138,7 @@ fbtk_set_mapping(fbtk_widget_t *widget, bool map)
 
 /** swap the widget given with the next sibling.
  *
- * Swap a sibling widget with the next deepest in the hierachy
+ * Swap a sibling widget with the next deepest in the hierarchy
  */
 static void
 swap_siblings(fbtk_widget_t *lw)

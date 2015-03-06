@@ -159,7 +159,7 @@ nserror treeview_create(treeview **tree,
 nserror treeview_destroy(treeview *tree);
 
 /**
- * Find a releation for node creation.
+ * Find a relation for node creation.
  *
  * \param tree		Treeview object in which to create folder
  * \param relation	Existing node to insert as relation of, or NULL

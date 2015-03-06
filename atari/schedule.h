@@ -23,14 +23,14 @@
 /**
  * Process events up to current time.
  *
- * \return The number of miliseconds until the next scheduled event.
+ * \return The number of milliseconds until the next scheduled event.
  */
 int schedule_run(void);
 
 /**
  * Schedule a callback.
  *
- * \param ival interval before the callback should be made in miliseconds.
+ * \param ival interval before the callback should be made in milliseconds.
  * \param callback callback function.
  * \param p user parameter, passed to callback function.
  * \return NSERROR_OK on success or appropriate error code.

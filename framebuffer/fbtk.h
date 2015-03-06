@@ -171,8 +171,8 @@ fbtk_callback fbtk_get_handler(fbtk_widget_t *widget, fbtk_callback_type cbt);
  *
  * @param root An fbtk widget.
  * @param event an event structure to update.
- * @param timeout The number of miliseconds to wait for an event. 0
- *                means do not wait and -1 means wait foreevr.
+ * @param timeout The number of milliseconds to wait for an event. 0
+ *                means do not wait and -1 means wait forever.
  * @return wether \a event has been updated.
  */
 bool fbtk_event(fbtk_widget_t *root, nsfb_event_t *event, int timeout);
@@ -189,7 +189,7 @@ void fbtk_input(fbtk_widget_t *widget, nsfb_event_t *event);
  *
  * Move the pointer cursor to a given location.
  *
- * @param widget any tookit widget.
+ * @param widget any toolkit widget.
  * @param x movement in horizontal plane.
  * @param y movement in vertical plane.
  * @param relative Wheter the /a x and /a y should be considered relative to
@@ -217,7 +217,7 @@ int fbtk_keycode_to_ucs4(int code, fbtk_modifier_type mods);
 
 /** Obtain the widget at a point on screen.
  *
- * @param widget any tookit widget.
+ * @param widget any toolkit widget.
  * @param x location in horizontal plane.
  * @param y location in vertical plane.
  * @return widget or NULL.
@@ -314,7 +314,7 @@ void fbtk_request_redraw(fbtk_widget_t *widget);
 /**
  * Destroy a widget and all its descendants.
  *
- * Removes a widget from the hierachy and frees it and all its children.
+ * Removes a widget from the hierarchy and frees it and all its children.
  *
  * @param widget The widget to destroy.
  * @return 0 on success or -1 on error.

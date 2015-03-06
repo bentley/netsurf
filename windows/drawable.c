@@ -489,7 +489,7 @@ nsws_drawable_mousemove(struct gui_window *gw, int x, int y)
 }
 
 /**
- * Called when activity occours within the drawable window.
+ * Called when activity occurs within the drawable window.
  */
 static LRESULT CALLBACK
 nsws_window_drawable_event_callback(HWND hwnd,

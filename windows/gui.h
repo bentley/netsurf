@@ -87,7 +87,7 @@ nserror nsws_create_main_class(HINSTANCE hinstance);
 /**
  * Cause a browser window to navigate to a url
  *
- * \param hwnd The win32 handle to the browser window or one of its decendants.
+ * \param hwnd The win32 handle to the browser window or one of its descendants.
  * \param url The URL to navigate to.
  */
 bool nsws_window_go(HWND hwnd, const char *url);

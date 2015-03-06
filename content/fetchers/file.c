@@ -504,7 +504,7 @@ static char *gen_nice_title(char *path)
  * \param even is the row an even row.
  * \param buffer The output buffer.
  * \param buffer_len The space available in the output buffer.
- * \return NSERROR_OK or error code on faliure.
+ * \return NSERROR_OK or error code on failure.
  */
 static nserror
 process_dir_ent(struct fetch_file_context *ctx,

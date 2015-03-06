@@ -123,7 +123,7 @@ static nserror cookie_manager_walk_cb(void *ctx, void *node_data,
  * \param root		Search root node, or NULL to search from tree's root
  * \param title		ID of the node to look for
  * \param title_len	Byte length of title string
- * \param found		Updated to the matching node's cookie maanger entry
+ * \param found		Updated to the matching node's cookie manager entry
  * \return NSERROR_OK on success, appropriate error otherwise
  */
 static nserror cookie_manager_find_entry(treeview_node *root,
@@ -153,7 +153,7 @@ static nserror cookie_manager_find_entry(treeview_node *root,
  * \param root		Search root node, or NULL to search from tree's root
  * \param title		ID of the node to look for
  * \param title_len	Byte length of title string
- * \param found		Updated to the matching node's cookie maanger folder
+ * \param found		Updated to the matching node's cookie manager folder
  * \return NSERROR_OK on success, appropriate error otherwise
  */
 static nserror cookie_manager_find_folder(treeview_node *root,
@@ -505,7 +505,7 @@ void cookie_manager_remove(const struct cookie_data *data)
 
 
 /**
- * Initialise the treeview entry feilds
+ * Initialise the treeview entry fields
  *
  * \return true on success, false on memory exhaustion
  */

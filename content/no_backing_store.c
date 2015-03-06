@@ -17,7 +17,7 @@
  */
 
 /** \file
- * Low-level resource cache null persistant storage implementation.
+ * Low-level resource cache null persistent storage implementation.
  */
 
 #include "utils/nsurl.h"
@@ -67,7 +67,7 @@ static nserror invalidate(nsurl *url)
  *
  * @param url The url is used as the unique primary key to invalidate.
  * @param[in] flags The flags to control how the object data is released.
- * @return NSERROR_OK on success or error code on faliure.
+ * @return NSERROR_OK on success or error code on failure.
  */
 static nserror release(nsurl *url, enum backing_store_flags flags)
 {

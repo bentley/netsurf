@@ -183,8 +183,8 @@ struct llcache_store_parameters {
 	 * need some way to map url to cache entries so it is a
 	 * generally useful configuration value.
 	 *
-	 * Too small a value will cause unecessary collisions and
-	 * cache misses and larger values cause proportionaly larger
+	 * Too small a value will cause unnecessary collisions and
+	 * cache misses and larger values cause proportionally larger
 	 * amounts of memory to be used.
 	 *
 	 * The "birthday paradox" means that the hash will experience
@@ -266,7 +266,7 @@ void llcache_clean(bool purge);
  * \param post     POST data, or NULL for a GET request
  * \param cb       Client callback for events
  * \param pw       Pointer to client-specific data
- * \param result   Pointer to location to recieve cache handle
+ * \param result   Pointer to location to receive cache handle
  * \return NSERROR_OK on success, appropriate error otherwise
  */
 nserror llcache_handle_retrieve(nsurl *url, uint32_t flags,

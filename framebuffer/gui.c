@@ -578,7 +578,7 @@ static bool nslog_stream_configure(FILE *fptr)
 static void framebuffer_run(void)
 {
 	nsfb_event_t event;
-	int timeout; /* timeout in miliseconds */
+	int timeout; /* timeout in milliseconds */
 
 	while (fb_complete != true) {
 		/* run the scheduler and discover how long to wait for
@@ -1217,8 +1217,8 @@ create_toolbar(struct gui_window *gw,
 
 	/* loop proceeds creating widget on the left hand side until
 	 * it runs out of layout or encounters a url bar declaration
-	 * wherupon it works backwards from the end of the layout
-	 * untill the space left is for the url bar
+	 * whereupon it works backwards from the end of the layout
+	 * until the space left is for the url bar
 	 */
 	while ((itmtype >= toolbar_layout) && 
 	       (*itmtype != 0) && 
@@ -1429,8 +1429,8 @@ resize_toolbar(struct gui_window *gw,
 
 	/* loop proceeds creating widget on the left hand side until
 	 * it runs out of layout or encounters a url bar declaration
-	 * wherupon it works backwards from the end of the layout
-	 * untill the space left is for the url bar
+	 * whereupon it works backwards from the end of the layout
+	 * until the space left is for the url bar
 	 */
 	while (itmtype >= toolbar_layout && xdir != 0) {
 
@@ -1534,7 +1534,7 @@ resize_toolbar(struct gui_window *gw,
 	}
 }
 
-/** Routine called when "stripped of focus" event occours for browser widget.
+/** Routine called when "stripped of focus" event occurs for browser widget.
  *
  * @param widget The widget reciving "stripped of focus" event.
  * @param cbi The callback parameters.

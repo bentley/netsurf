@@ -140,7 +140,7 @@ html_process_new_script(html_content *c,
 }
 
 /**
- * Callback for asyncronous scripts
+ * Callback for asynchronous scripts
  */
 static nserror
 convert_script_async_cb(hlcache_handle *script,
@@ -250,7 +250,7 @@ convert_script_defer_cb(hlcache_handle *script,
 }
 
 /**
- * Callback for syncronous scripts
+ * Callback for synchronous scripts
  */
 static nserror
 convert_script_sync_cb(hlcache_handle *script,
@@ -367,7 +367,7 @@ exec_src_script(html_content *c,
 
 	/* there are three ways to process the script tag at this point:
 	 *
-	 * Syncronously  pause the parent parse and continue after
+	 * Synchronously  pause the parent parse and continue after
 	 *                 the script has downloaded and executed. (default)
 	 * Async         Start the script downloading and execute it when it 
 	 *                 becomes available. 
@@ -389,7 +389,7 @@ exec_src_script(html_content *c,
 	}
 
 	if (async) {
-		/* asyncronous script */
+		/* asynchronous script */
 		script_type = HTML_SCRIPT_ASYNC;
 		script_cb = convert_script_async_cb;
 
@@ -405,7 +405,7 @@ exec_src_script(html_content *c,
 			script_type = HTML_SCRIPT_DEFER;
 			script_cb = convert_script_defer_cb;
 		} else {
-			/* syncronous script */
+			/* synchronous script */
 			script_type = HTML_SCRIPT_SYNC;
 			script_cb = convert_script_sync_cb;
 		}

@@ -132,7 +132,7 @@ void *bitmap_create(int width, int height, unsigned int state)
  * Overlay a sprite onto the given bitmap
  *
  * \param  bitmap  bitmap object
- * \param  s       8bpp sprite to be overlayed onto bitmap
+ * \param  s       8bpp sprite to be overlaid onto bitmap
  */
 
 void bitmap_overlay_sprite(struct bitmap *bitmap, const osspriteop_header *s)
@@ -190,7 +190,7 @@ void bitmap_overlay_sprite(struct bitmap *bitmap, const osspriteop_header *s)
 		bitmap_set_opaque(bitmap, false);
 	}
 
-	/* (partially-)transparent pixels in the overlayed sprite retain
+	/* (partially-)transparent pixels in the overlaid sprite retain
 	 * their transparency in the output bitmap; opaque sprite pixels
 	 * are also propagated to the bitmap, except those which are the
 	 * OVERLAY_INDEX colour which allow the original bitmap contents to

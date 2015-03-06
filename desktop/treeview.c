@@ -1363,7 +1363,7 @@ nserror treeview_destroy(treeview *tree)
 			TREE_OPTION_SUPPRESS_RESIZE |
 			TREE_OPTION_SUPPRESS_REDRAW);
 
-	/* Destroy feilds */
+	/* Destroy fields */
 	for (f = 0; f <= tree->n_fields; f++) {
 		lwc_string_unref(tree->fields[f].field);
 	}

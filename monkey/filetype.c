@@ -106,7 +106,7 @@ void monkey_fetch_filetype_init(const char *mimefile)
 			*ptr++ = '\0';
 
 			/* search for the first non-whitespace character which
-			 * will be the first filename extenion */
+			 * will be the first filename extension */
 			while (isspace(*ptr))
 				ptr++;
 
@@ -169,7 +169,7 @@ const char *monkey_fetch_filetype(const char *unix_path)
 
 	if (stat(unix_path, &statbuf) != 0) {
 		/* error calling stat, the file has probably become
-		 * inacessible, this routine cannot fail so just
+		 * inaccessible, this routine cannot fail so just
 		 * return the default mime type.
 		 */
 		return "text/plain";

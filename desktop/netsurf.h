@@ -32,7 +32,7 @@
  * Register operation table.
  *
  * @param table NetSurf operations table.
- * @return NSERROR_OK on success or error code on faliure. On faliure
+ * @return NSERROR_OK on success or error code on failure. On failure
  *                    global table will not be initialised.
  */
 nserror netsurf_register(struct netsurf_table *table);
@@ -41,8 +41,8 @@ nserror netsurf_register(struct netsurf_table *table);
  * Initialise netsurf core.
  *
  * @param messages path to translation mesage file.
- * @param store_path path to persistant storage.
- * @return NSERROR_OK on success or error code on faliure.
+ * @param store_path path to persistent storage.
+ * @return NSERROR_OK on success or error code on failure.
  */
 nserror netsurf_init(const char *messages, const char *store_path);
 

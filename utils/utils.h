@@ -211,7 +211,7 @@ const char *rfc1123_date(time_t t);
 unsigned int wallclock(void);
 
 /**
- * Generate a string from one or more component elemnts separated with
+ * Generate a string from one or more component elements separated with
  * a single value.
  *
  * This is similar in intent to the perl join function creating a
@@ -224,16 +224,16 @@ unsigned int wallclock(void);
  * @param[in,out] size The size of the space available if \a str not
  *                     NULL on input and if not NULL set to the total
  *                     output length on output.
- * @param[in] sep The character to separete the elemnts with.
+ * @param[in] sep The character to separate the elements with.
  * @param[in] nelm The number of elements up to a maximum of 16.
  * @param[in] ap The elements of the path as string pointers.
  * @return NSERROR_OK and the complete path is written to str or error
- *         code on faliure.
+ *         code on failure.
  */
 nserror vsnstrjoin(char **str, size_t *size, char sep, size_t nelm, va_list ap);
 
 /**
- * Generate a string from one or more component elemnts separated with
+ * Generate a string from one or more component elements separated with
  * a single value.
  *
  * This is similar in intent to the perl join function creating a
@@ -246,11 +246,11 @@ nserror vsnstrjoin(char **str, size_t *size, char sep, size_t nelm, va_list ap);
  * @param[in,out] size The size of the space available if \a str not
  *                     NULL on input and if not NULL set to the total
  *                     output length on output.
- * @param[in] sep The character to separete the elemnts with.
+ * @param[in] sep The character to separate the elements with.
  * @param[in] nelm The number of elements up to a maximum of 16.
  * @param[in] ... The elements of the path as string pointers.
  * @return NSERROR_OK and the complete path is written to str or error
- *         code on faliure.
+ *         code on failure.
  */
 nserror snstrjoin(char **str, size_t *size, char sep, size_t nelm, ...);
 

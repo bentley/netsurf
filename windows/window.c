@@ -29,7 +29,7 @@ nsws_get_gui_window(HWND hwnd)
 	struct gui_window *gw = NULL;
 	HWND phwnd = hwnd;
 
-	/* scan the window hierachy for gui window */
+	/* scan the window hierarchy for gui window */
 	while (phwnd != NULL) {
 		gw = GetProp(phwnd, TEXT("GuiWnd"));
 		if (gw != NULL)

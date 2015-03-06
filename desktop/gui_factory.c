@@ -146,7 +146,7 @@ static nserror verify_window_register(struct gui_window_table *gwt)
 		return NSERROR_BAD_PARAMETER;
 	}
 
-	/* check the mandantory fields are set */
+	/* check the mandatory fields are set */
 	if (gwt->create == NULL) {
 		return NSERROR_BAD_PARAMETER;
 	}
@@ -277,7 +277,7 @@ static nserror verify_download_register(struct gui_download_table *gdt)
 		return NSERROR_BAD_PARAMETER;
 	}
 
-	/* all enties are mandantory */
+	/* all enties are mandatory */
 	if (gdt->create == NULL) {
 		return NSERROR_BAD_PARAMETER;
 	}
@@ -366,7 +366,7 @@ static nserror verify_utf8_register(struct gui_utf8_table *gut)
 		return NSERROR_BAD_PARAMETER;
 	}
 
-	/* mandantory operations */
+	/* mandatory operations */
 	if (gut->utf8_to_local == NULL) {
 		return NSERROR_BAD_PARAMETER;
 	}
@@ -451,7 +451,7 @@ static nserror verify_search_web_register(struct gui_search_web_table *gswt)
 		return NSERROR_BAD_PARAMETER;
 	}
 
-	/* mandantory operations */
+	/* mandatory operations */
 	if (gswt->provider_update == NULL) {
 		return NSERROR_BAD_PARAMETER;
 	}
@@ -459,7 +459,7 @@ static nserror verify_search_web_register(struct gui_search_web_table *gswt)
 	return NSERROR_OK;
 }
 
-/** verify low level cache persistant backing store table is valid */
+/** verify low level cache persistent backing store table is valid */
 static nserror verify_llcache_register(struct gui_llcache_table *glt)
 {
 	/* check table is present */
@@ -467,7 +467,7 @@ static nserror verify_llcache_register(struct gui_llcache_table *glt)
 		return NSERROR_BAD_PARAMETER;
 	}
 
-	/* mandantory operations */
+	/* mandatory operations */
 	if (glt->store == NULL) {
 		return NSERROR_BAD_PARAMETER;
 	}
@@ -508,7 +508,7 @@ static nserror verify_fetch_register(struct gui_fetch_table *gft)
 		return NSERROR_BAD_PARAMETER;
 	}
 
-	/* check the mandantory fields are set */
+	/* check the mandatory fields are set */
 	if (gft->filetype == NULL) {
 		return NSERROR_BAD_PARAMETER;
 	}
@@ -532,7 +532,7 @@ static nserror verify_file_register(struct gui_file_table *gft)
 		return NSERROR_BAD_PARAMETER;
 	}
 
-	/* check the mandantory fields are set */
+	/* check the mandatory fields are set */
 	if (gft->mkpath == NULL) {
 		return NSERROR_BAD_PARAMETER;
 	}
@@ -593,7 +593,7 @@ static nserror verify_browser_register(struct gui_browser_table *gbt)
 		return NSERROR_BAD_PARAMETER;
 	}
 
-	/* check the mandantory fields are set */
+	/* check the mandatory fields are set */
 	if (gbt->schedule == NULL) {
 		return NSERROR_BAD_PARAMETER;
 	}

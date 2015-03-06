@@ -59,7 +59,7 @@
 	 ((((c0 & 0x00ff00) + (c1 & 0x00ff00)) >> 1) & 0x00ff00))
 
 /* Choose either black or white, depending on which is furthest from the
- * percieved lightness of the supplied colour, c0. */
+ * perceived lightness of the supplied colour, c0. */
 #define colour_to_bw_furthest(c0)					\
 	((((((c0 & 0x0000ff) *  77) >>  8) +				\
 	   (((c0 & 0x00ff00) * 151) >> 16) +				\

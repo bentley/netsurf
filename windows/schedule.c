@@ -110,7 +110,7 @@ nserror win32_schedule(int ival, void (*callback)(void *p), void *p)
 		return ret;
 	}
 
-        tv.tv_sec = ival / 1000; /* miliseconds to seconds */
+        tv.tv_sec = ival / 1000; /* milliseconds to seconds */
         tv.tv_usec = (ival % 1000) * 1000; /* remainder to microseconds */
 
 	nscb = calloc(1, sizeof(struct nscallback));

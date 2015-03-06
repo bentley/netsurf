@@ -196,7 +196,7 @@ else
     NS_GTK_GEN="gtk+ 2 toolkit library, librsvg2 library"
 fi
 
-# Genertic OS package install
+# Generic OS package install
 #  looks for package managers and tries to use them if present
 ns-package-install()
 {

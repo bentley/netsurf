@@ -893,7 +893,7 @@ void layout_minmax_block(struct box *block,
  * Find next block that current margin collapses to.
  *
  * \param  box    box to start tree-order search from (top margin is included)
- * \param  block  box responsible for current block fromatting context
+ * \param  block  box responsible for current block formatting context
  * \param  viewport_height  height of viewport in px
  * \param  max_pos_margin  updated to to maximum positive margin encountered
  * \param  max_neg_margin  updated to to maximum negative margin encountered
@@ -1182,7 +1182,7 @@ void layout_block_find_dimensions(int available_width, int viewport_height,
 }
 
 /**
- * Manimpulate box height according to CSS min-height and max-height properties
+ * Manipulate box height according to CSS min-height and max-height properties
  *
  * \param  box		block to modify with any min-height or max-height
  * \param  container	containing block for absolutely positioned elements, or
@@ -4063,7 +4063,7 @@ void layout_minmax_table(struct box *table,
 		assert(cell->type == BOX_TABLE_CELL);
 		assert(cell->style);
 		/** TODO: Handle colspan="0" correctly.
-		 *        It's currently converted to 1 in box normaisation */
+		 *        It's currently converted to 1 in box normalisation */
 		assert(cell->columns != 0);
 
 		if (cell->columns != 1)
@@ -4552,7 +4552,7 @@ bool layout_position_absolute(struct box *box,
 					css_computed_float(c->style) ==
 						CSS_FLOAT_RIGHT)) {
 				/* Float x/y coords are relative to nearest
-				 * ansestor with float_children, rather than
+				 * ancestor with float_children, rather than
 				 * relative to parent. Need to get x/y relative
 				 * to parent */
 				struct box *p;

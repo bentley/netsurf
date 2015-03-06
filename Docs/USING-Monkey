@@ -97,7 +97,7 @@ Commands
 
   WINDOW DESTROY %id%
     Destroy the given browser window.
-    Minimally you will recieve a WINDOW DESTROY WIN %id% response.
+    Minimally you will receive a WINDOW DESTROY WIN %id% response.
 
   WINDOW GO %id% %url% [%url%]
     Cause the given browser window to visit the given URL.

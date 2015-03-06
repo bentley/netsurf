@@ -25,7 +25,7 @@
  * to be filesystem agnostic.
  *
  * The provided defaults operate on POSIX path names with / as a
- * directory separator in a single hieracy from a root directory.
+ * directory separator in a single hierarchy from a root directory.
  *
  * Other path conventions require the default operations to be
  * overridden. For example windows frontend runs on a filesystem with
@@ -51,7 +51,7 @@ struct gui_file_table {
 	/* Mandantory entries */
 
 	/**
-	 * Generate a path from one or more component elemnts.
+	 * Generate a path from one or more component elements.
 	 *
 	 * If a string is allocated it must be freed by the caller.
 	 *
@@ -63,7 +63,7 @@ struct gui_file_table {
 	 * @param[in] nemb The number of elements.
 	 * @param[in] ap The elements of the path as string pointers.
 	 * @return NSERROR_OK and the complete path is written to str
-	 *         or error code on faliure.
+	 *         or error code on failure.
 	 */
 	nserror (*mkpath)(char **str, size_t *size, size_t nemb, va_list ap);
 
@@ -79,7 +79,7 @@ struct gui_file_table {
 	 *                     str not NULL on input and set to the total
 	 *                     output length on output.
 	 * @return NSERROR_OK and the complete path is written to \a str
-	 *         or error code on faliure.
+	 *         or error code on failure.
 	 */
 	nserror (*basename)(const char *path, char **str, size_t *size);
 
@@ -90,7 +90,7 @@ struct gui_file_table {
 	 * @param[out] path A string containing the result path which
 	 *                  must be freed by the caller.
 	 * @return NSERROR_OK and the path is written to \a path
-	 *         or error code on faliure.
+	 *         or error code on failure.
 	 */
 	nserror (*nsurl_to_path)(struct nsurl *url, char **path);
 
@@ -100,10 +100,10 @@ struct gui_file_table {
 	 * Perform the necessary operations on a path to generate a nsurl.
 	 *
 	 * @param[in] path The path to convert.
-	 * @param[out] url pointer to recive the nsurl, The returned
+	 * @param[out] url pointer to receive the nsurl, The returned
 	 *                 url should be unreferenced by the caller.
 	 * @return NSERROR_OK and the url is placed in \a url or error
-	 *         code on faliure.
+	 *         code on failure.
 	 */
 	nserror (*path_to_nsurl)(const char *path, struct nsurl **url);
 
@@ -120,7 +120,7 @@ struct gui_file_table {
 struct gui_file_table *default_file_table;
 
 /**
- * Generate a path from one or more component elemnts.
+ * Generate a path from one or more component elements.
  *
  * If a string is allocated it must be freed by the caller.
  *
@@ -136,7 +136,7 @@ struct gui_file_table *default_file_table;
  * @param[in] nelm The number of elements.
  * @param[in] ... The elements of the path as string pointers.
  * @return NSERROR_OK and the complete path is written to str
- *         or error code on faliure.
+ *         or error code on failure.
  */
 nserror netsurf_mkpath(char **str, size_t *size, size_t nelm, ...);
 
@@ -147,7 +147,7 @@ nserror netsurf_mkpath(char **str, size_t *size, size_t nelm, ...);
  * @param[out] path_out A string containing the result path which  must be
  *                      freed by the caller.
  * @return NSERROR_OK and the path is written to \a path_out or error code on
- *         faliure.
+ *         failure.
  */
 nserror netsurf_nsurl_to_path(struct nsurl *url, char **path_out);
 
@@ -157,10 +157,10 @@ nserror netsurf_nsurl_to_path(struct nsurl *url, char **path_out);
  * Perform the necessary operations on a path to generate a nsurl.
  *
  * @param[in] path The path to convert.
- * @param[out] url pointer to recive the nsurl, The returned
+ * @param[out] url pointer to receive the nsurl, The returned
  *                 url should be unreferenced by the caller.
  * @return NSERROR_OK and the url is placed in \a url or error
- *         code on faliure.
+ *         code on failure.
  */
 nserror netsurf_path_to_nsurl(const char *path, struct nsurl **url);
 

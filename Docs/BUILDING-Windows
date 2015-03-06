@@ -50,7 +50,7 @@
 
       $ wine NetSurf.exe
 
-  The staticaly linked binary which is generated may be several
+  The statically linked binary which is generated may be several
   megabytes in size, this can be reduced by stripping the binary.
 
       $ i586-mingw32msvc-strip NetSurf.exe 
@@ -65,7 +65,7 @@
   Debian-based OS:
 
   The mingw cross compilation tools are required. These can be
-  installed as pakages on Debian/Ubuntu systems:
+  installed as packages on Debian/Ubuntu systems:
 
       $ sudo apt-get install mingw32 mingw32-binutils mingw32-runtime
 
@@ -78,7 +78,7 @@
 
   Other:
 
-  For other OS the apropriate packages and environment must be installed.
+  For other OS the appropriate packages and environment must be installed.
 
   pkg-config
 ------------
@@ -95,7 +95,7 @@ EOF
   Base libraries
 ----------------
 
-  Unlike other OS the base libraries and their dependancies need to be
+  Unlike other OS the base libraries and their dependencies need to be
   built and installed.
 
   The instructions given here assume you will be installing on a

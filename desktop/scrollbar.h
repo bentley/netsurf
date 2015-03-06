@@ -73,7 +73,7 @@ typedef void(*scrollbar_client_callback)(void *client_data,
  * \param client_data		data for the client callback
  * \param client_callback	client callback for scrollbar events
  * \param s			updated to point at the newly created scrollbar
- * \return	true if scrollbar has been created succesfully or false on
+ * \return	true if scrollbar has been created successfully or false on
  *		memory exhaustion
  */
 bool scrollbar_create(bool horizontal, int length, int full_size,
@@ -97,7 +97,7 @@ void scrollbar_destroy(struct scrollbar *s);
  * \param clip	the clipping rectangle
  * \param scale	scale for the redraw
  * \param ctx	current redraw context
- * \return	true on succes false otherwise
+ * \return	true on success false otherwise
  */
 bool scrollbar_redraw(struct scrollbar *s, int x, int y,
 		const struct rect *clip, float scale,

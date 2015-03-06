@@ -532,7 +532,7 @@ static int32 ami_scheduler_process(STRPTR args, int32 length, APTR execbase)
  * Create a new process for the scheduler.
  *
  * \param nsmsgport Message port to send scheduler events to.
- * \return NSERROR_OK on success or error code on faliure.
+ * \return NSERROR_OK on success or error code on failure.
  */
 nserror ami_scheduler_process_create(struct MsgPort *nsmsgport)
 {

@@ -190,7 +190,7 @@ static nserror ami_backing_store_send(int type, void *data)
  * @param flags The flags to control how the object is stored.
  * @param data The objects source data.
  * @param datalen The length of the \a data.
- * @return NSERROR_OK on success or error code on faliure.
+ * @return NSERROR_OK on success or error code on failure.
  */
 static nserror
 ami_backing_store_store(nsurl *url,
@@ -216,9 +216,9 @@ ami_backing_store_store(nsurl *url,
  *
  * @param[in] url The url is used as the unique primary key for the data.
  * @param[in] bsflags The flags to control how the object is retrieved.
- * @param[out] data_out The objects data.
+ * @param[out] data_out The object's data.
  * @param[out] datalen_out The length of the \a data retrieved.
- * @return NSERROR_OK on success or error code on faliure.
+ * @return NSERROR_OK on success or error code on failure.
  */
 static nserror ami_backing_store_fetch(nsurl *url,
       enum backing_store_flags bsflags,
@@ -258,7 +258,7 @@ static nserror ami_backing_store_fetch(nsurl *url,
  *
  * @param[in] url The url is used as the unique primary key to invalidate.
  * @param[in] bsflags The flags to control how the object data is released.
- * @return NSERROR_OK on success or error code on faliure.
+ * @return NSERROR_OK on success or error code on failure.
  */
 static nserror ami_backing_store_release(nsurl *url, enum backing_store_flags bsflags)
 {
@@ -280,7 +280,7 @@ static nserror ami_backing_store_release(nsurl *url, enum backing_store_flags bs
  * be returned as a result to the fetch or meta operations.
  *
  * @param url The url is used as the unique primary key to invalidate.
- * @return NSERROR_OK on success or error code on faliure.
+ * @return NSERROR_OK on success or error code on failure.
  */
 static nserror ami_backing_store_invalidate(nsurl *url)
 {
@@ -329,7 +329,7 @@ static nserror ami_backing_store_finalise(void)
  * Initialise the backing store.
  *
  * @param parameters to configure backing store.
- * @return NSERROR_OK on success or error code on faliure.
+ * @return NSERROR_OK on success or error code on failure.
  */
 static nserror
 ami_backing_store_initialise(const struct llcache_store_parameters *parameters)

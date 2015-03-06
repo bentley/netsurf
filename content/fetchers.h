@@ -37,10 +37,10 @@ struct fetch;
  *
  * These are the operations a fetcher must implement.
  *
- * Each fetcher is called once for initialisaion and finalisation.
+ * Each fetcher is called once for initialisation and finalisation.
  * The poll entry point will be called to allow all active fetches to progress.
  * The flow of a fetch operation is:
- *   URL is checked for aceptability.
+ *   URL is checked for acceptability.
  *   setup with all applicable data.
  *   start is called before the first poll
  *   after completion or abort it is freed
@@ -138,7 +138,7 @@ void fetcher_quit(void);
  *
  * \note If the caller does not subsequently obtain the fdset again
  * the fetchers will fall back to the less efficient polled
- * operation. The fallback to polled operation will only occour after
+ * operation. The fallback to polled operation will only occur after
  * a timeout which introduces additional delay.
  *
  * \param[out] read_fd_set The fd set for read.

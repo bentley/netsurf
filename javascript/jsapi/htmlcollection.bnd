@@ -1,7 +1,7 @@
 /* Binding to generate HTMLcollection interface
  *
  * The js_libdom (javascript to libdom) binding type is currently the
- * only one implemented and this principly describes that binding.
+ * only one implemented and this principally describes that binding.
  *
  * Copyright 2012 Vincent Sanders <vince@netsurf-browser.org>
  *

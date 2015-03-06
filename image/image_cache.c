@@ -86,12 +86,12 @@ struct image_cache_s {
 
 	/** Maximum size of bitmaps allocated at any one time */
 	size_t max_bitmap_size;
-	/** The number of objects when maximum bitmap usage occoured */
+	/** The number of objects when maximum bitmap usage occurred */
 	int max_bitmap_size_count;
 
 	/** Maximum count of bitmaps allocated at any one time */
 	int max_bitmap_count;
-	/** The size of the bitmaps when the max count occoured */
+	/** The size of the bitmaps when the max count occurred */
 	size_t max_bitmap_count_size;
 
 	/** Bitmap was not available at plot time required conversion */

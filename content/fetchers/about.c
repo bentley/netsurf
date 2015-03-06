@@ -635,7 +635,7 @@ struct about_handlers about_handler_list[] = {
  * List all the valid about: paths available
  *
  * \param ctx The fetch context.
- * \return true for sucess or false to generate an error.
+ * \return true for success or false to generate an error.
  */
 static bool fetch_about_about_handler(struct fetch_about_context *ctx)
 {

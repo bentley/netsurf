@@ -1238,7 +1238,7 @@ bool ro_gui_wimp_event_prepare_menu(wimp_w w, wimp_i i, wimp_menu *menu)
  *
  * \param w              The window to attach the menu to.
  * \param m              The menu to be attached.
- * \param menu_auto      true if the menu should be opened autimatically on
+ * \param menu_auto      true if the menu should be opened automatically on
  *                        Menu clicks with no task intervention; false to pass
  *                        clicks to the window's Mouse Event handler and leave
  *                        that to pass the menu click back to us for handling

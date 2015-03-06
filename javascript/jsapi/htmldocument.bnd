@@ -52,7 +52,7 @@ binding document {
 	/** location instantiated on first use */
 	property unshared location;
 
-        /* compatability mode instantiated on first use */
+        /* compatibility mode instantiated on first use */
 	property unshared compatMode;
 
 	/* events through a single interface */

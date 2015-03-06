@@ -626,7 +626,7 @@ nsgtk_preferences_comboTheme_changed(GtkComboBox *combo, struct ppref *priv)
 
 		nsoption_set_int(current_theme, theme);
 
-		/* retrive the theme name if it is not the default */
+		/* retrieve the theme name if it is not the default */
 		if (theme != 0) {
 			/* Obtain data model from combo box. */
 			model = gtk_combo_box_get_model(combo);

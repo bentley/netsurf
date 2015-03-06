@@ -112,7 +112,7 @@ void gtk_fetch_filetype_init(const char *mimefile)
 			*ptr++ = '\0';
 
 			/* search for the first non-whitespace character which
-			 * will be the first filename extenion */
+			 * will be the first filename extension */
 			while (isspace(*ptr)) {
 				ptr++;
 			}

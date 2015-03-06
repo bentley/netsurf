@@ -111,7 +111,7 @@ nserror framebuffer_schedule(int tival, void (*callback)(void *p), void *p)
 
 	SRLOG(("Adding %p(%p) in %d", callback, p, tival));
 
-        tv.tv_sec = tival / 1000; /* miliseconds to seconds */
+        tv.tv_sec = tival / 1000; /* milliseconds to seconds */
         tv.tv_usec = (tival % 1000) * 1000; /* remainder to microseconds */
 
 	nscb = calloc(1, sizeof(struct nscallback));

@@ -161,7 +161,7 @@ static void nsgtk_viewdata_file_save(GtkWindow *parent, const char *filename,
 		return;
 	}
 
-	/* inform user of faliure */
+	/* inform user of failure */
 	notif = gtk_dialog_new_with_buttons(messages_get("gtkSaveFailedTitle"),
 					    parent,
 					    GTK_DIALOG_MODAL, GTK_STOCK_OK,
@@ -448,7 +448,7 @@ window_init(const char *title,
 }
 
 /**
- * open a window to dispaly an existing file.
+ * open a window to display an existing file.
  */
 static nserror
 window_init_fname(const char *title,

@@ -594,7 +594,7 @@ skip_children:
 
 	if (box_is_float(b)) {
 		/* Done floats, but the float container may have children,
-		 * or siblings, or ansestors with siblings.  Change to
+		 * or siblings, or ancestors with siblings.  Change to
 		 * float container and move past handling its float children.
 		 */
 		b = box_move_xy(b, BOX_WALK_FLOAT_CONTAINER, x, y);

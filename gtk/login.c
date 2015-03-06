@@ -158,7 +158,7 @@ void nsgtk_login_next(GtkWidget *w, gpointer data)
 void nsgtk_login_ok_clicked(GtkButton *w, gpointer data)
 {
 	/* close the window and destroy it, having continued the fetch
-	 * assoicated with it.
+	 * associated with it.
 	 */
 
   	struct session_401 *session = (struct session_401 *)data;

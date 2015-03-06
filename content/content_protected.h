@@ -83,7 +83,7 @@ struct content_handler {
 	const char *(*get_encoding)(const struct content *c, enum content_encoding_type op);
 	content_type (*type)(void);
 
-        /** handler dependant content sensitive internal data interface. */
+        /** handler dependent content sensitive internal data interface. */
 	void * (*get_internal)(const struct content *c, void *context);
 
 	/** There must be one content per user for this type. */
@@ -199,7 +199,7 @@ lwc_string *content__get_mime_type(struct content *c);
  *
  * \param c Content to set title on.
  * \param title The new title to set.
- * \return true on sucess else false.
+ * \return true on success else false.
  */
 bool content__set_title(struct content *c, const char *title);
 

@@ -111,10 +111,10 @@ static struct s_context_info * get_context_info( struct gui_window * gw, short m
 /***
  * Generates an unique filename for temp. files
  * The generated filename includes the path.
- * If TMPDIR environmenrt vairable is set, this will be used as path,
+ * If TMPDIR environment variable is set, this will be used as path,
  * otherwise U:\tmp\
  * \param prefix
- * \param sufffix
+ * \param suffix
  * \return pointer to static buffer owned by get_tmpfilename()
  */
 static char * get_tmpfilename(const char * prefix, const char * suffix)

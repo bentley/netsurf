@@ -31,12 +31,12 @@
 extern const char * const netsurf_version;
 
 /**
- * NetSuf browser major version number.
+ * NetSurf browser major version number.
  */
 extern const int netsurf_version_major;
 
 /**
- * NetSuf browser minor version number.
+ * NetSurf browser minor version number.
  */
 extern const int netsurf_version_minor;
 

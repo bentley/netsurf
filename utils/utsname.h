@@ -42,7 +42,7 @@ struct utsname {
  * Get the system information.
  *
  * @param buf the buffer to fill with the information.
- * @return 0 on sucess or -1 and errno set on faliure.
+ * @return 0 on success or -1 and errno set on failure.
  */
 int uname(struct utsname *buf);
 

@@ -1015,7 +1015,7 @@ static bool html_convert(struct content *c)
 	 * once the root node has been inserted into the document
 	 * which must have happened by this point in the parse.
 	 *
-	 * faliure to retrive the quirk mode or to start the
+	 * failure to retrieve the quirk mode or to start the
 	 * stylesheet fetch is non fatal as this "only" affects the
 	 * render and it would annoy the user to fail the entire
 	 * render for want of a quirks stylesheet.
@@ -1030,7 +1030,7 @@ static bool html_convert(struct content *c)
 	LOG(("%d fetches active", htmlc->base.active));
 
 	/* The parse cannot be completed here because it may be paused
-	 * untill all the resources being fetched have completed.
+	 * until all the resources being fetched have completed.
 	 */
 
 	/* if there are no active fetches in progress no scripts are
@@ -1547,7 +1547,7 @@ static void html_close(struct content *c)
 	 */
 	html->jscontext = NULL;
 
-	/* remove all object references from teh html content */
+	/* remove all object references from the html content */
 	html_object_close_objects(html);
 }
 

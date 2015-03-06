@@ -592,7 +592,7 @@ static nserror hotlist_load_entry(dom_node *li, hotlist_load_ctx *ctx)
 
 
 /*
- * Callback for libdom_iterate_child_elements, which dispite the namespace is
+ * Callback for libdom_iterate_child_elements, which despite the namespace is
  * a NetSurf function.
  *
  * \param node		Node that is a child of the directory UL node
@@ -1124,7 +1124,7 @@ nserror hotlist_iterate(void *ctx,
 
 
 /**
- * Initialise the treeview entry feilds
+ * Initialise the treeview entry fields
  *
  * \return NSERROR_OK on success, or appropriate error otherwise
  */

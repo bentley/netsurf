@@ -598,7 +598,7 @@ void ro_gui_dialog_open_persistent(wimp_w parent, wimp_w w, bool pointer) {
 void ro_gui_dialog_add_persistent(wimp_w parent, wimp_w w) {
   	int i;
 
-	/* all persistant windows have a back icon */
+	/* all persistent windows have a back icon */
 	ro_gui_wimp_update_window_furniture(w, wimp_WINDOW_BACK_ICON,
 			wimp_WINDOW_BACK_ICON);
 

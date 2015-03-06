@@ -1167,7 +1167,7 @@ void gemtk_wm_set_toolbar_redraw_func(GUIWIN *win, gemtk_wm_redraw_f func)
 }
 
 /**
-* Attach an arbitary pointer to the GUIWIN
+* Attach an arbitrary pointer to the GUIWIN
 */
 void gemtk_wm_set_user_data(GUIWIN *win, void *data)
 {

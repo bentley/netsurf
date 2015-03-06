@@ -1,5 +1,5 @@
 /*
- * Copyright 2014 Vincent Sanders <vince@nesturf-browser.org>
+ * Copyright 2014 Vincent Sanders <vince@netsurf-browser.org>
  *
  * This file is part of NetSurf, http://www.netsurf-browser.org/
  *
@@ -17,7 +17,7 @@
  */
 
 /** \file
- * GUI Themeing interface.
+ * GUI Theming interface.
  */
 
 #ifndef _NETSURF_DESKTOP_THEME_H_

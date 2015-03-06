@@ -900,7 +900,7 @@ uint32_t gtk_gui_gdkkey_to_nskey(GdkEventKey *key)
 
 
 /**
- * create directory name and check it is acessible and a directory.
+ * create directory name and check it is accessible and a directory.
  */
 static nserror
 check_dirname(const char *path, const char *leaf, char **dirname_out)
@@ -941,7 +941,7 @@ check_dirname(const char *path, const char *leaf, char **dirname_out)
  * Get the path to the config directory.
  *
  * @param config_home_out Path to configuration directory.
- * @return NSERROR_OK on sucess and \a config_home_out updated else error code.
+ * @return NSERROR_OK on success and \a config_home_out updated else error code.
  */
 static nserror get_config_home(char **config_home_out)
 {
@@ -1058,7 +1058,7 @@ static nserror create_config_home(char **config_home_out)
  * Get the path to the cache directory.
  *
  * @param cache_home_out Path to cache directory.
- * @return NSERROR_OK on sucess and \a cache_home_out updated else error code.
+ * @return NSERROR_OK on success and \a cache_home_out updated else error code.
  */
 static nserror get_cache_home(char **cache_home_out)
 {
